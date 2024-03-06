@@ -11,25 +11,14 @@ import { Container } from './styles';
 
 function App() {
   const [tasks, setTask] = useState([]);
-  const [selected, setSelected] = useState();
 
-  console.log(tasks);
-  function selectTask(taskSelect) {
-    console.log(taskSelect);
-    setSelected(taskSelect);
-    setTask((prevState) => prevState.map((task) => ({
-      ...task,
-      selected: task.id === selectTask.id,
-    })));
-  }
-  console.log(selected);
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyles />
       <Container>
         <Header />
         <Form setTask={setTask} />
-        <List task={tasks} selectTask={() => selectTask} />
+        <List task={tasks} />
       </Container>
     </ThemeProvider>
   );

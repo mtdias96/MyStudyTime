@@ -6,6 +6,13 @@ export const Container = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+  justify-content: center;
+  `;
 
-export const Logo = styled.h1``;
+export const Logo = styled.h1`
+padding: 8px;
+span{
+  color: blue;
+}
+  border: 2px solid black;
+`;

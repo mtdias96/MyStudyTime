@@ -4,7 +4,8 @@ export default function Header() {
   return (
     <Container>
       <Logo>
-        MyStudantyTime
+        <span>Studanty</span>
+        Time
       </Logo>
     </Container>
   );

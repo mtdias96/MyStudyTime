@@ -46,7 +46,7 @@ export default function Task({ title, time, id }) {
         </div>
       </div>
       <Actions>
-        <Button onClick={handleClickButton}>{isRunning ? 'Parar' : 'Começar'}</Button>
+        <Button isRunning={isRunning} onClick={handleClickButton} style={{ backgroundColor: isRunning ? 'red' : 'blue' }}>{isRunning ? 'Parar' : 'Começar'}</Button>
         <Button className="reset" onClick={resetTimer}>Reiniciar</Button>
       </Actions>
     </Card>
