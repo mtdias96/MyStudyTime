@@ -33,6 +33,7 @@ export default function Form({ setTask }) {
     <FormContainer onSubmit={addTasks}>
       <InputContainer>
         <Input
+          id="task"
           placeholder="Digite sua tarefa"
           value={title}
           onChange={handleStudyChange}
@@ -40,6 +41,7 @@ export default function Form({ setTask }) {
       </InputContainer>
       <InputContainer>
         <Input
+          id="time"
           type="text"
           placeholder="00:00:00"
           value={time}
